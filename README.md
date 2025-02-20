@@ -2,7 +2,7 @@
 
 Move authorization outside of your application code to a single solution! Design fine-grained models that are centralized, flexible, fast, scalable, and testable.
 
-This [Okta Training](https://okta.com/training) hands-on lab walks you adding authorization to an API using Okta FGA. You’ll add authorization to an API that we provide you with and register the associated client web application with Auth0 as an identity provider.
+This [Okta Learning](https://learning.okta.com/) hands-on lab walks you adding authorization to an API using Okta FGA. You’ll add authorization to an API that we provide you with and register the associated client web application with Auth0 as an identity provider.
 
 The application is a simplified Google Drive-style application to demonstrate how to use [Okta FGA](https://fga.dev) to handle fine-grained authorization (FGA) on a per-resource level.
 
