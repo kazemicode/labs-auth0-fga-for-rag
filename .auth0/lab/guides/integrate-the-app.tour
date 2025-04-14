@@ -1,15 +1,15 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "4: Integrate the application with Okta FGA",
+  "title": "4: Integrate the application with Auth0 FGA",
   "steps": [
     {
       "file": "src/app/authorization.ts",
-      "description": "## Install the OpenFGA SDK\n\nSince we'll be integrating this application with Okta FGA, we'll need to install the OpenFGA SDK (referenced here in `authorization.ts`).\n1. Click [here](command:codetour.sendTextToTerminal?[\"npm install @openfga/sdk\"]) to install the OpenFGA SDK\n\n> Note: this runs the command `npm install @openfga/sdk`.\n",
+      "description": "## Install the OpenFGA SDK\n\nSince we'll be integrating this application with Auth0 FGA, we'll need to install the OpenFGA SDK (referenced here in `authorization.ts`).\n1. Click [here](command:codetour.sendTextToTerminal?[\"npm install @openfga/sdk\"]) to install the OpenFGA SDK\n\n> Note: this runs the command `npm install @openfga/sdk`.\n",
       "line": 2
     },
     {
       "file": "src/app/authorization.ts",
-      "description": "## Instantiate an OpenFgaClient\n\nIn this section of `authorization.ts` we instantiate a new `OpenFgaClient` using the FGA environment variables we set earlier in the `.env` file.\n\nAs a reminder:\n\n- `apiUrl`: The URL to your Okta FGA in the form of `https://api.<region>1.fga.dev`\n- `storeId`: Found in your Okta FGA Dashboard.\n- `authorizationModelId`: Found in your Okta FGA Dashboard. **Note: this changes with each update to your model.**\n- `apiTokenIssuer`: This is currently always `fga.us.auth0.com` when using Okta FGA.\n- `apiAudience`: The same as your `apiUrl` with a trailing slash `/`.\n- `clientId` and `clientSecret`: Can be found in your Okta FGA Dashboard.",
+      "description": "## Instantiate an OpenFgaClient\n\nIn this section of `authorization.ts` we instantiate a new `OpenFgaClient` using the FGA environment variables we set earlier in the `.env` file.\n\nAs a reminder:\n\n- `apiUrl`: The URL to your Auth0 FGA in the form of `https://api.<region>1.fga.dev`\n- `storeId`: Found in your Auth0 FGA Dashboard.\n- `authorizationModelId`: Found in your Auth0 FGA Dashboard. **Note: this changes with each update to your model.**\n- `apiTokenIssuer`: This is currently always `fga.us.auth0.com` when using Auth0 FGA.\n- `apiAudience`: The same as your `apiUrl` with a trailing slash `/`.\n- `clientId` and `clientSecret`: Can be found in your Auth0 FGA Dashboard.",
       "selection": {
         "start": {
           "line": 7,
@@ -38,7 +38,7 @@
     },
     {
       "file": "src/app/authorization.ts",
-      "description": "## `writeTuples()` method\n\nHere we use OpenFGA's `writeTuples()` method, which writes a new tuples containing data about specific relationships to our Okta FGA store. Here's we're creating a new tuple specifying that a particular user is the owner of a particular folder.",
+      "description": "## `writeTuples()` method\n\nHere we use OpenFGA's `writeTuples()` method, which writes a new tuples containing data about specific relationships to our Auth0 FGA store. Here's we're creating a new tuple specifying that a particular user is the owner of a particular folder.",
       "selection": {
         "start": {
           "line": 30,
@@ -69,7 +69,7 @@
     },
     {
       "title": "Test the application",
-      "description": "## Test the application\n1. First, complete the sign up process to create an end user account to access your application.\n1. Once you're signed up and signed in, select **Add Folder**.\n1. Name the folder **test** and select **Create Folder**.\n1. Switch to the tab where you are logged into the Okta FGA dashboard.\n1. Select **Tuple Management**.\n\n> You should now see that you have some non-test relationship tuples that reference your Auth0 end user's ID and the ID of the folder you just created! This should appear similar to below:\n\n![img](https://cdn.auth0.com/website/auth0-training/oktafga/fga-real-tuples.png)"
+      "description": "## Test the application\n1. First, complete the sign up process to create an end user account to access your application.\n1. Once you're signed up and signed in, select **Add Folder**.\n1. Name the folder **test** and select **Create Folder**.\n1. Switch to the tab where you are logged into the Auth0 FGA dashboard.\n1. Select **Tuple Management**.\n\n> You should now see that you have some non-test relationship tuples that reference your Auth0 end user's ID and the ID of the folder you just created! This should appear similar to below:\n\n![img](https://cdn.auth0.com/website/auth0-training/oktafga/fga-real-tuples.png)"
     }
   ]
 }

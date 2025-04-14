@@ -4,7 +4,7 @@
   "steps": [
     {
       "file": "",
-      "description": "## Check that you have the required accounts\nBefore getting started, let's verify you have everything you need:\n\n1. [Okta FGA account](https://fga.dev/) to add authorization to resources exposed by the sample application.\n1. An [Auth0 account](https://auth0.com/signup) as our identity provider.\n1. A [Vercel account](https://vercel.com/signup) to create a key-value store for the resources served by the sample API.\n\nFree versions of these accounts are adequate for this lab.\n\n-------\n\n> Note: This [Okta Learning](https://learning.okta.com/) hands-on lab is part of a free, on-demand learning path: [**Build Scalable Authorization Models with Okta Fine Grained Authorization**](https://learning.okta.com/path/build-scalable-authorization-models-with-okta-fga). \n",
+      "description": "## Check that you have the required accounts\nBefore getting started, let's verify you have everything you need:\n\n1. [Auth0 FGA account](https://fga.dev/) to add authorization to resources exposed by the sample application.\n1. An [Auth0 account](https://auth0.com/signup) as our identity provider.\n1. A [Vercel account](https://vercel.com/signup) to create a key-value store for the resources served by the sample API.\n\nFree versions of these accounts are adequate for this lab.\n\n-------\n\n> Note: This [Okta Learning](https://learning.okta.com/) hands-on lab is part of a free, on-demand learning path: [**Build Scalable Authorization Models with Auth0 Fine Grained Authorization**](https://learning.okta.com/path/build-scalable-authorization-models-with-okta-fga). \n",
       "line": 1,
       "title": "Check that you have the required accounts"
     }
