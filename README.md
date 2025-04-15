@@ -4,7 +4,7 @@ Move authorization outside of your application code to a single solution! Design
 
 This [Okta Learning](https://learning.okta.com/) hands-on lab walks you adding authorization to an API using Auth0 FGA. You’ll add authorization to an API that we provide you with and register the associated client web application with Auth0 as an identity provider.
 
-The application is a simplified Google Drive-style application to demonstrate how to use [Auth0 FGA](https://fga.dev) to handle fine-grained authorization (FGA) on a per-resource level.
+The application is a simplified [Google Drive-style application](https://github.com/oktadev/fga-drive-example) to demonstrate how to use [Auth0 FGA](https://fga.dev) to handle fine-grained authorization (FGA) on a per-resource level.
 
 A user can log in, add files (pictures only), and create folders. Uploaded files are only visible to a user by default. They can choose to either share a file directly with other users or share folders (or subfolders), and all files contained within them will be shared automatically. Files can be shared with other users available in the Auth0 tenant; the application will look for them based on their email address.
 
