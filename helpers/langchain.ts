@@ -46,7 +46,7 @@ async function readDoc(path: string) {
   return await fs.readFile(path, "utf-8");
 }
 
-/* Reads documents from the assets folder and converts them to langChain Documents */
+/* Reads documents from the assets folder and converts them to LangChain Documents */
 export async function readDocuments() {
   const folderPath = "./assets";
   const files = await fs.readdir(folderPath);
