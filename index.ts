@@ -24,7 +24,7 @@ async function main() {
   // 5. Create the retrieval agent
 
   // 6. Query the retrieval agent with a prompt
-  // The agent will rephrase the original question and populate the "query" argument, until it can answer the user's question.
+  // If the query isn't answerable from the resources the user has permissions on, the agent will say so.
 
   // 7. Print the answer
 }
