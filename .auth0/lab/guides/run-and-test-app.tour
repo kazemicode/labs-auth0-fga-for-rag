@@ -3,6 +3,10 @@
   "title": "4: Run and test the application",
   "steps": [
     {
+      "title": "Checkpoint",
+      "description": "## Checkpoint\n\n### You just:\n1. Created a RAG pipeline using LangChain and the Node.js Auth0 AI Langchain SDK.\n\n### Next you will:\n1. Run the application to test FGA on our RAG pipeline."
+    },
+    {
       "file": "",
       "line": 1,
       "title": "Deploy the application",

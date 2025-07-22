@@ -18,23 +18,23 @@
     },
     {
       "file": ".env",
-      "description": "## Define `FGA_STORE_ID`\n1. From the window that popped up when you created the Auth0 FGA client, copy the **Store ID** value.\n1. Paste this value on the line highlighted above to set the **FGA_STORE_ID** variable.\n",
+      "description": "## Set `FGA_STORE_ID`\n1. From the window that popped up when you created the Auth0 FGA client, copy the **Store ID** value.\n1. Paste this value on the line highlighted above to set the **FGA_STORE_ID** variable.\n",
       "line": 5,
-      "title": "Define FGA_STORE_ID",
+      "title": "Set FGA_STORE_ID",
       "selection": {
         "start": {
           "line": 1,
-          "character": 1
+          "character": 4
         },
         "end": {
-          "line": 4,
-          "character": 1
+          "line": 1,
+          "character": 7
         }
       }
     },
     {
       "file": ".env",
-      "description": "## Define `FGA_CLIENT_ID`\n1. Copy the **Client ID** value from the window that popped up when you created the Auth0 FGA client.\n1. Paste this value on the line highlighted above to set the **FGA_CLIENT_ID** variable.\n",
+      "description": "## Set `FGA_CLIENT_ID`\n1. Copy the **Client ID** value from the window that popped up when you created the Auth0 FGA client.\n1. Paste this value on the line highlighted above to set the **FGA_CLIENT_ID** variable.\n",
       "line": 9,
       "selection": {
         "start": {
@@ -46,27 +46,17 @@
           "character": 30
         }
       },
-      "title": "Define FGA_CLIENT_ID"
+      "title": "Set FGA_CLIENT_ID"
     },
     {
       "file": ".env",
-      "description": "## Define `FGA_CLIENT_SECRET`\n1. Copy the **Client Secret** value from the window that popped up when you created the Auth0 FGA client.\n1. Paste this value on the line highlighted above to set the **FGA_CLIENT_SECRET** variable.\n",
+      "description": "## Set `FGA_CLIENT_SECRET`\n1. Copy the **Client Secret** value from the window that popped up when you created the Auth0 FGA client.\n1. Paste this value on the line highlighted above to set the **FGA_CLIENT_SECRET** variable.\n",
       "line": 10,
-      "selection": {
-        "start": {
-          "line": 3,
-          "character": 4
-        },
-        "end": {
-          "line": 3,
-          "character": 93
-        }
-      },
-      "title": "Define FGA_CLIENT_SECRET"
+      "title": "Set FGA_CLIENT_SECRET"
     },
     {
       "file": ".env",
-      "description": "## Check FGA_API_URL\n\n1. Select the **Continue** button to display additional credentials needed to call the Auth0 FGA API.\n2. Check that the **FGA_API_URL** value matches the one on the line above that sets the **FGA_API_URL** variable. If it doesn't, update it so that it does.",
+      "description": "## Check `FGA_API_URL`\n\n1. Select the **Continue** button to display additional credentials needed to call the Auth0 FGA API.\n2. Check that the **FGA_API_URL** value matches the one on the line above that sets the **FGA_API_URL** variable. If it doesn't, update it so that it does.",
       "line": 4,
       "selection": {
         "start": {
@@ -82,9 +72,28 @@
     },
     {
       "file": ".env",
-      "description": "## Set the `FGA_STORE_ID`\n\n1. Copy the value of the **FGA_STORE_ID**.\n2. Paste this value on the line highlighted above to set the **FGA_STORE_ID** variable.\n3. Select the **Done** button in the Auth0 FGA Dashboard to dismiss the window with the client credentials.",
-      "line": 5,
-      "title": "Set the FGA_STORE_ID"
+      "description": "## Set `FGA_AUTHORIZATION_MODEL_ID`\n\n1. Copy the value of the **FGA_AUTHORIZATION_MODEL_ID**.\n2. Paste this value on the line highlighted above to set the **FGA_STORE_ID** variable.\n3. Select the **Done** button in the Auth0 FGA Dashboard to dismiss the window with the client credentials.",
+      "line": 6,
+      "title": "Set FGA_AUTHORIZATION_MODEL_ID"
+    },
+    {
+      "title": "Create OpenAI API key",
+      "description": "## Create an OpenAI API key\n\n>If you haven't already, create an [OpenAI account](http://auth.openai.com/create-account).\n\n1. Sign into your OpenAI account at https://auth.openai.com/log-in.\n2. Visit https://platform.openai.com/api-keys\n3. Select the **Create new secret key** button.\n4. Select **Service account**.\n5. Name this key **Oktane lab**. Keep all other options as default.\n6. Select **Done**.\n\n> Your OpenAI API key is displayed in a pop up message. Keep this open for the next step.",
+      "selection": {
+        "start": {
+          "line": 11,
+          "character": 4
+        },
+        "end": {
+          "line": 11,
+          "character": 52
+        }
+      }
+    },
+    {
+      "file": ".env",
+      "description": "## Set OPEN_API_KEY\n\n1. From the OpenAI window, select the **Copy** button to copy your API key.\n2. Paste this value on the line highlighted above to set the **OPEN_AI_KEY** variable.\n3. Select the **Done** button in the OpenAI window to dismiss the window. You may now log out of OpenAI and close its tab.",
+      "line": 13
     }
   ],
   "nextTour": "2: Create an Auth0 FGA model"

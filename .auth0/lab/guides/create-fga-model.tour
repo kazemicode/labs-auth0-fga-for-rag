@@ -6,7 +6,7 @@
       "file": "README.md",
       "line": 1,
       "title": "Checkpoint",
-      "description": "## Checkpoint\n\n### You just:\n1. Created an Auth0 FGA store and client.\n1. Set the Auth0 FGA specific environment variables in your `.env` file so that you can call the Auth0 FGA API from an included sample application.\n\n### Next you will:\n1. Create an authorization model in the Auth0 FGA dashboard.\n\n"
+      "description": "## Checkpoint\n\n### You just:\n1. Created an Auth0 FGA store and client.\n1. Set the Auth0 FGA and OpenAI specific environment variables in your `.env` file so that you can call the Auth0 FGA and OpenAI APIs from an included sample application.\n\n### Next you will:\n1. Create an authorization model in the Auth0 FGA dashboard.\n\n"
     },
     {
       "file": "model.txt",
