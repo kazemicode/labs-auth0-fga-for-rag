@@ -3,25 +3,8 @@
   "title": "3: Create the RAG pipleline",
   "steps": [
     {
-      "file": "",
-      "line": 1,
-      "title": "Create a Vercel KV store",
-      "description": "## Create a Vercel KV database\n\n1. Log in to [Vercel](https://vercel.com/), and visit the [Vercel Dashboard](https://vercel.com/dashboard).\n1. Select **Add New** > **Store**.\n1. Select **Upstash** and select the **Create** button next to the Upstash for Redis option. \n1. Read and accept to the Upstash Terms & Conditions to proceed to the Create Database form.\n1. Select the **Primary Region** and **Read regions** nearest to your geolocation.\n1. Select the **Free** option.\n1. Select the **Continue** button.\n1. Name this database **test-fga**.\n1. Select the **Create** button.",
-      "selection": {
-        "start": {
-          "line": 1,
-          "character": 23
-        },
-        "end": {
-          "line": 1,
-          "character": 28
-        }
-      }
-    },
-    {
-      "file": ".env",
-      "description": "## Add Vercel configurations to `.env`\n1. On the next screen in Vercel, select **.env.local**.\n1. Select **Show secret**.\n1. Select **Copy Snippet**\n1. Paste the contents into the highlighted line above to set the Vercel KV variables.\n1. Click [here](command:workbench.action.files.save) to save your changes to the `.env` file.",
-      "line": 28
+      "title": "Checkpoint",
+      "description": "## Checkpoint\n\n### You just:\n1. Created an Auth0 FGA model.\n1. Created a relationship tuple that specifies that all users can view the public-doc.\n\n### Next you will:\n1. Create a RAG pipeline using LangChain and the Node.js Auth0 AI Langchain SDK.\n\n"
     }
   ],
   "nextTour": "4: Run and test the application"
