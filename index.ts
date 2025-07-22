@@ -26,8 +26,7 @@ async function main() {
   // 6. Query the retrieval agent with a prompt
   // The agent will rephrase the original question and populate the "query" argument, until it can answer the user's question.
 
-// 7. Print the answer
-
+  // 7. Print the answer
 }
 
 main().catch(console.error);
