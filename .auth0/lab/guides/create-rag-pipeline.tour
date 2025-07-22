@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "3: Create the RAG pipleline",
+  "title": "3: Create the RAG pipeline",
   "steps": [
     {
       "title": "Checkpoint",
