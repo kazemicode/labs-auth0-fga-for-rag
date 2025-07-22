@@ -2,6 +2,8 @@
 
 FGA+RAG? OMG! Leverage Auth0 FGA and Auth for GenAI to implement fine-grained authorization for Retrieval Augmented Generation (RAG). When a user prompts an AI agent for for information, the AI agent uses the RAG pipeline to generate a response. But what if the response has sensitive data? Using FGA, you can ensure  the user has authorization to receive the data in the response before the response is rendered.
 
+Attribution: This lab is based off of Deepu K Sasidharan's (Staff Developer Advocate at Okta) blog, [Build a Secure LangChain RAG Agent Using Auth0 FGA and LangGraph on Node.js](https://auth0.com/blog/genai-langchain-js-fga/).
+
 ---
 # How to Get Started with this Lab
 
