@@ -7,7 +7,7 @@ import { Document } from "@langchain/core/documents";
 export class RetrievalAgent {
   private agent;
 
-  private constructor(agent) {
+  private constructor(agent: RetrievalAgent) {
     this.agent = agent;
   }
 
