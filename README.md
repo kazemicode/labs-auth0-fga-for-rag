@@ -1,6 +1,8 @@
 # Lab: Fine-grained Authorization Control for RAG with Auth for GenAI
 
-FGA+RAG? OMG! Leverage Auth0 FGA and Auth for GenAI to implement [fine-grained authorization for Retrieval Augmented Generation (RAG)](https://auth0.com/ai/docs/authorization-for-rag). When a user prompts an AI agent for for information, the AI agent uses the RAG pipeline to generate a response. But what if the response has sensitive data? Using FGA, you can ensure the user has authorization to receive the data in the response before the response is rendered.
+FGA+RAG? OMG! Leverage Auth0 FGA and Auth for GenAI to implement fine-grained authorization for Retrieval Augmented Generation (RAG). When a user prompts an AI agent for for information, the AI agent uses the RAG pipeline to generate a response. But what if the response has sensitive data? Using FGA, you can ensure the user has authorization to receive the data in the response before the response is rendered.
+
+This lab uses sample code from Auth0 documentation on how to set up [Authorization for RAG](https://auth0.com/ai/docs/authorization-for-rag) using Auth0 FGA.
 
 
 ---
@@ -12,31 +14,19 @@ FGA+RAG? OMG! Leverage Auth0 FGA and Auth for GenAI to implement [fine-grained a
 
     **⚠️ Note to internal Okta employees: Do NOT use your EMU (Enterprise-managed user) account since Codespaces are disabled.**
 
-2. An Auth0 account: You'll also need an Auth0 account. You should use a new account for our labs so that you have a fresh tenant. Register for one [here](https://auth0.com/signup).
+2. An Auth0 FGA account: You'll need an Auth0 FGA account. We'll walk you through how to set this up in the lab.
+3. A Google Gemini: Last, you'll need an Google Gemini account to create an Google Gemini API key for this lab. We'll walk you through how to set this up in the lab.
 
 ## Accessing and Working with Auth0 Labs
 
 1. **After logging into GitHub, open the lab repo in a Codespace:** From the *Code* dropdown menu of this branch, toggle to the *Codespaces* tab. Click the plus sign to create and open the lab in a Codespace. A new tab will open, and Codespaces will begin configuring the lab environment. Wait for the environment to finish building.
-2. **Begin working with the lab:** Once the environment is ready you'll see a Codetour popup with instructions for connecting the lab to your Auth0 account. This can take some time, as the environment is installing several extensions and libraries to facilitate the lab. Once it is complete, you can open the Codetour to view all steps using the panel in the lower right. At this point, you should follow the remainder of the instructions within Codetour!
+2. **Begin working with the lab:** Once the environment loads all the required libraries and extensions, you'll see a Codetour popup with instructions on how to get started. At this point, you should follow the remainder of the instructions within Codetour!
 
 ### Notes:
 - **If you'd like to save your work to your own fork:** You can commit and push your changes to a fork of this repo. (See: [Using Source Control in Your Codespace](https://docs.github.com/en/codespaces/developing-in-codespaces/using-source-control-in-your-codespace)).
 - **Close the Codespace when you're finished with the lab:** Codespaces come with a set amount of free usage. To avoid using all of your free use allocation, be sure to return to the forked repo, select the "Code" dropdown, select the dots next to your open Codespace, and select "Delete." This will not delete your forked repository. You can keep that forever, and open a new Codespace whenever you like.
 - Questions? Check out our [Lab FAQs](https://auth0-training.github.io/)!
 
----
-
-### What is Auth0?
----
-
-Auth0 helps you to:
-
-* Add authentication with [multiple authentication sources](https://auth0.com/docs/identityproviders), either social like **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce, among others**, or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS or any SAML Identity Provider**.
-* Add authentication through more traditional [username/password databases](https://auth0.com/docs/connections/database/custom-db).
-* Add support for [linking different user accounts](https://auth0.com/docs/link-accounts) with the same user.
-* Support for generating signed [JSON Web Tokens](https://auth0.com/docs/jwt) to call your APIs and **flow the user identity** securely.
-* Analytics of how, when, and where users are logging in.
-* Pull data from other sources and add it to the user profile, through [JavaScript rules](https://auth0.com/docs/rules/current).
 
 ### Issue Reporting
 ---
