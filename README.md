@@ -2,7 +2,7 @@
 
 FGA+RAG? OMG! Leverage Auth0 FGA and Auth for GenAI to implement fine-grained authorization for Retrieval Augmented Generation (RAG). When a user prompts an AI agent for for information, the AI agent uses the RAG pipeline to generate a response. But what if the response has sensitive data? Using FGA, you can ensure the user has authorization to receive the data in the response before the response is rendered.
 
-This lab uses sample code from Auth0 documentation on how to set up [Authorization for RAG](https://auth0.com/ai/docs/authorization-for-rag) using Auth0 FGA.
+This lab uses adapted sample code from Auth0 documentation on how to set up [Authorization for RAG](https://auth0.com/ai/docs/authorization-for-rag) using Auth0 FGA.
 
 
 ---
@@ -15,7 +15,7 @@ This lab uses sample code from Auth0 documentation on how to set up [Authorizati
     **⚠️ Note to internal Okta employees: Do NOT use your EMU (Enterprise-managed user) account since Codespaces are disabled.**
 
 2. An Auth0 FGA account: You'll need an Auth0 FGA account. We'll walk you through how to set this up in the lab.
-3. A Google Gemini: Last, you'll need an Google Gemini account to create an Google Gemini API key for this lab. We'll walk you through how to set this up in the lab.
+3. A Google Gemini: Last, you'll need an Google Gemini account to create an Google Gemini API key for this lab. We'll walk you through how to set this up in the lab. While in practice you can use any model provider, we use Google Gemini since free-tier users can generate embeddings.
 
 ## Accessing and Working with Auth0 Labs
 
