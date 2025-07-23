@@ -12,7 +12,8 @@ FGA+RAG? OMG! Leverage Auth0 FGA and Auth for GenAI to implement [fine-grained a
 
     **⚠️ Note to internal Okta employees: Do NOT use your EMU (Enterprise-managed user) account since Codespaces are disabled.**
 
-2. An Auth0 account: You'll also need an Auth0 account. You should use a new account for our labs so that you have a fresh tenant. Register for one [here](https://auth0.com/signup).
+2. An Auth0 FGA account: You'll need an Auth0 FGA account. We'll walk you through how to set this up in the lab.
+3. An OpenAI account: Last, you'll need an OpenAI account to create an OpenAI API key for this lab. We'll walk you through how to set this up in the lab.
 
 ## Accessing and Working with Auth0 Labs
 
@@ -24,19 +25,6 @@ FGA+RAG? OMG! Leverage Auth0 FGA and Auth for GenAI to implement [fine-grained a
 - **Close the Codespace when you're finished with the lab:** Codespaces come with a set amount of free usage. To avoid using all of your free use allocation, be sure to return to the forked repo, select the "Code" dropdown, select the dots next to your open Codespace, and select "Delete." This will not delete your forked repository. You can keep that forever, and open a new Codespace whenever you like.
 - Questions? Check out our [Lab FAQs](https://auth0-training.github.io/)!
 
----
-
-### What is Auth0?
----
-
-Auth0 helps you to:
-
-* Add authentication with [multiple authentication sources](https://auth0.com/docs/identityproviders), either social like **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce, among others**, or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS or any SAML Identity Provider**.
-* Add authentication through more traditional [username/password databases](https://auth0.com/docs/connections/database/custom-db).
-* Add support for [linking different user accounts](https://auth0.com/docs/link-accounts) with the same user.
-* Support for generating signed [JSON Web Tokens](https://auth0.com/docs/jwt) to call your APIs and **flow the user identity** securely.
-* Analytics of how, when, and where users are logging in.
-* Pull data from other sources and add it to the user profile, through [JavaScript rules](https://auth0.com/docs/rules/current).
 
 ### Issue Reporting
 ---
