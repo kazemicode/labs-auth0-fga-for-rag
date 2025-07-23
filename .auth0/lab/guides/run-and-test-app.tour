@@ -10,7 +10,7 @@
       "file": "",
       "line": 1,
       "title": "Run the application",
-      "description": "## Deploy the application\n1. Before deplying the application, navigate to the **PORTS** tab near the bottom of this screen.\n1. Right click on the entry with the port **3000**.\n1. Select **Port Visibility** > **Public**.\n1. Select [this link](command:workbench.action.debug.start)to deploy the application.\n\n",
+      "description": "## Deploy the application\n1. Select [this link](command:workbench.action.debug.start) to deploy the application.\n>The agent will respond that it cannot find the required information to answer the query, since the information is only available in the private document the user does not have permissions on.\n>In this case, the agent can only retrieve the information needed for the answer if you change the query to something available in the public document.\n\n\n\n",
       "selection": {
         "start": {
           "line": 5,
@@ -24,7 +24,7 @@
     },
     {
       "title": "Give the user access to the private doc",
-      "description": "## Give the user access to the private doc\n\nFor the agent to access informationin the private doc on the user's behalf, we'll need to add a new tuple in Auth0 FGA.\n\n1. From the Auth0 FGA dashboard, select **Tuple Management**.\n2. Select the **+ Add Tuple** button.\n3. Fill in the following values:\n    - User:  **user:Sara**\n    - Object: select **doc** and add **private-doc** in the ID field\n    - Relation: **viewer**\n4. Select the **Add Tuple** button.\n\nIt should look like this:\n\n![img](https://cdn.auth0.com/website/auth0-training/oktane25/fga-tuple-restricted.png)"
+      "description": "## Give the user access to the private doc\n\nFor the agent to access information in the private doc on the user's behalf, we'll need to add a new tuple in Auth0 FGA.\n\n1. From the Auth0 FGA dashboard, select **Tuple Management**.\n2. Select the **+ Add Tuple** button.\n3. Fill in the following values:\n    - User:  **user:Sara**\n    - Object: select **doc** and add **private-doc** in the ID field\n    - Relation: **viewer**\n4. Select the **Add Tuple** button.\n\nIt should look like this:\n\n![img](https://cdn.auth0.com/website/auth0-training/oktane25/fga-tuple-restricted.png)"
     },
     {
       "title": "Re-run the application",
