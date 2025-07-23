@@ -15,7 +15,7 @@ async function main() {
 
   // 1. Read and load documents from the assets folder and store as List of Documents
 
-  // 2. Create an in-memory vector store (MemoryVectorStore) of embeddings for OpenAI models from the list of Documents.
+  // 2. Create an in-memory vector store (MemoryVectorStore) of embeddings for Google Gemini models from the list of Documents.
 
   // 3. Create a retriever that uses Auth0 FGA to filter documents based on user permissions.
 
