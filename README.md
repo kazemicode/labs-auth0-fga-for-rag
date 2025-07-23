@@ -1,4 +1,4 @@
-# Lab: Fine-grained Authorization Control for RAG with Auth for GenAI
+# Lab: Fine-grained Authorization for RAG with Auth for GenAI
 
 FGA+RAG? OMG! Leverage Auth0 FGA and Auth for GenAI to implement fine-grained authorization for Retrieval Augmented Generation (RAG). When a user prompts an AI agent for for information, the AI agent uses the RAG pipeline to generate a response. But what if the response has sensitive data? Using FGA, you can ensure the user has authorization to receive the data in the response before the response is rendered.
 
