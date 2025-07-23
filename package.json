@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@auth0/ai-langchain": "^3.2.0",
+    "@langchain/google-genai": "^0.2.15",
     "@langchain/langgraph": "^0.2.74",
     "abort-controller": "^3.0.0",
     "acorn": "^8.11.3",

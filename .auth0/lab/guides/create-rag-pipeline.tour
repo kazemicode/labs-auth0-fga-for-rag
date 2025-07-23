@@ -28,34 +28,34 @@
     },
     {
       "file": "index.ts",
-      "description": "# Create an in-memory VectorStore\n\nWe'll need a place to store and retrieve the documents so the agent can perform semantic search when it is queried. For our purposes we will use the in-memory vector store class `MemoryVectorStore` from the LangChain library. This is practical for prototyping, but it isn't persistent. In practice, you can use any memory store compatible with OpenAI agents.\n\nThe code snippet below takes our list of `Document`s we created before and generates vector embeddings for each document using the specified OpenAI model. These vectors are then stored in the in-memory store so we can query them later.\n\nSelect the **Insert Code** link below to insert the code just under the comment to create the `MemoryVectorStore` of embeddings from the list of `Document`s:\n\n```js\n const vectorStore = await MemoryVectorStore.fromDocuments(\n    documents,\n    new OpenAIEmbeddings({ model: \"text-embedding-3-small\" })\n  );\n```",
+      "description": "# Create an in-memory VectorStore\n\nWe'll need a place to store and retrieve the documents so the agent can perform semantic search when it is queried. For our purposes we will use the in-memory vector store class `MemoryVectorStore` from the LangChain library. This is practical for prototyping, but it isn't persistent. In practice, you can use any memory store compatible with OpenAI agents.\n\nThe code snippet below takes our list of `Document`s we created before and generates vector embeddings for each document using the specified OpenAI model. These vectors are then stored in the in-memory store so we can query them later.\n\nSelect the **Insert Code** link below to insert the code just under the comment to create the `MemoryVectorStore` of embeddings from the list of `Document`s:\n\n```js\nconst vectorStore = await MemoryVectorStore.fromDocuments(\n    documents,\n    new GoogleGenerativeAIEmbeddings({\n      model: \"embedding-001\",\n      apiKey: process.env.GOOGLE_API_KEY,\n    })\n  );\n```",
       "line": 19
     },
     {
       "file": "index.ts",
       "description": "## Create the Retriever\n\nNext we'll create a retriever that uses Auth0 FGA to filter the documents that can be used to answer a user's query based on that user's document view permissions.\n\nTo do this, we use the vector store we just created as the base retriever. `vectorStore.asRetriever()` converts our vector store (`MemoryVectorStore`) into a `Retriever` interface used in LangChain. `buildQuery` is a function that defines authorization rules for each document. It constructs an authorization query that can be issued to our Auth0 FGA model:\n\n- `user` is the user you're checking permissions for. In this case, \"Sara\".\n- `object` is the resource we're checking for the user's permissions on. In this case, we are iterating on every doc.\n- `relation` is the required relationship (permission) we're checking for. In this case, \"viewer\".\n\n\nSelect the **Insert Code** link below to insert the code just under the comment to create a retriever for Auth0 FGA:\n\n```js\n const retriever = FGARetriever.create({\n    retriever: vectorStore.asRetriever(),\n    // FGA tuple to query for the user's permissions\n    buildQuery: (doc) => ({\n      user: `user:${user}`,\n      object: `doc:${doc.metadata.id}`,\n      relation: \"viewer\",\n    }),\n  });\n```",
-      "line": 24
+      "line": 27
     },
     {
       "file": "index.ts",
       "description": "## Convert retriever to tool for an agent\n\nWith the code below, we'll convert the `Retriever` into a tool that can be used by a LangGraph agent.\n\nSelect the **Insert Code** link below to insert the code just under the comment to convert the retriever:\n\n```js\nconst fgaTool = retriever.asJoinedStringTool();\n```",
-      "line": 34
+      "line": 37
     },
     {
       "file": "index.ts",
       "description": "## Create the retrieval agent\n\nNow we'll create a OpenAI retrieval agent that can answer questions based only on data retrieved via the `fgaTool` we just created. This is done using the `RetrievalAgent` wrapper class we explored earlier, defined in `./helpers/langchain`. \n\nSelect the **Insert Code** link below to insert the code just under the comment to create retriever agent:\n```js\n  const retrievalAgent = RetrievalAgent.create([fgaTool]);\n```",
-      "line": 36,
+      "line": 39,
       "title": "Create the retrieval agent"
     },
     {
       "file": "index.ts",
       "description": "## Query the retrieval agent\n\nNow we'll query the retrieval agent with a prompt and store the response as `answer`. The prompt is a string: \"Show me forecast for ZEKO?\"\n\nSelect the **Insert Code** link below to insert the code just under the comment to query the retriever agent:\n\n```js\n  const answer = await retrievalAgent.query(\"Show me forecast for ZEKO?\");\n```",
-      "line": 39
+      "line": 42
     },
     {
       "file": "index.ts",
       "description": "## Print the answer\n\nFinally, we'll print the answer to the query.\n\nSelect the **Insert Code** link below to insert the code just under the comment to print the answer:\n```js\n  console.info(answer);\n  \n```",
-      "line": 41
+      "line": 44
     }
   ],
   "nextTour": "4: Run and test the application"

@@ -1,6 +1,6 @@
 import "dotenv/config";
 
-import { OpenAIEmbeddings } from "@langchain/openai";
+import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { FGARetriever } from "@auth0/ai-langchain/RAG";
 

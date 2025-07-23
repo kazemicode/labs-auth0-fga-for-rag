@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import { StructuredToolInterface } from "@langchain/core/tools";
 import { createReactAgent } from "@langchain/langgraph/prebuilt";
-import { ChatOpenAI } from "@langchain/openai";
+import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { Document } from "@langchain/core/documents";
 
 export class RetrievalAgent {
@@ -15,7 +15,11 @@ export class RetrievalAgent {
   static create(tools: StructuredToolInterface[]) {
     // Create a retrieval agent that has access to the retrieval tool.
     const retrievalAgent = createReactAgent({
-      llm: new ChatOpenAI({ temperature: 0, model: "gpt-4o-mini" }),
+      llm: new ChatGoogleGenerativeAI({
+        temperature: 0,
+        model: "gemini-2.5-pro",
+        apiKey: process.env.GOOGLE_API_KEY,
+      }),
       tools,
       stateModifier: [
         "Answer the user's question only based on context retrieved from provided tools.",
@@ -29,6 +33,7 @@ export class RetrievalAgent {
 
   // Query the retrieval agent with a user question
   async query(query: string) {
+    console.info("Query: " + query);
     const { messages } = await this.agent.invoke({
       messages: [
         {

@@ -4,7 +4,7 @@
   "steps": [
     {
       "file": "",
-      "description": "## Check that you have the required accounts\nBefore getting started, let's verify you have everything you need:\n\n1. [Auth0 FGA account](https://fga.dev/) to add authorization to resources exposed by the sample application.\n1. An [OpenAI account](http://auth.openai.com/create-account) to create an API key.\n\nFree versions of these accounts are adequate for this lab.\n\n-------\n\n[Okta Learning](https://learning.okta.com/)",
+      "description": "## Check that you have the required accounts\nBefore getting started, let's verify you have everything you need:\n\n1. [Auth0 FGA account](https://fga.dev/) to add authorization to resources exposed by the sample application.\n1. An [Google AI Studio account](https://ai.google.dev/aistudio) to create a Gemini API key.\n\nFree versions of these accounts are adequate for this lab. We use Google Gemini since they allow free-tier customers to create vector embeddings. However, in practice, you can use any model provider.\n\n-------\n\n[Okta Learning](https://learning.okta.com/)",
       "line": 1,
       "title": "Check that you have the required accounts"
     },

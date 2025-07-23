@@ -77,8 +77,8 @@
       "title": "Set FGA_AUTHORIZATION_MODEL_ID"
     },
     {
-      "title": "Create OpenAI API key",
-      "description": "## Create an OpenAI API key\n\n>If you haven't already, create an [OpenAI account](http://auth.openai.com/create-account).\n\n1. Sign into your OpenAI account at https://auth.openai.com/log-in.\n2. Visit https://platform.openai.com/api-keys\n3. Select the **Create new secret key** button.\n4. Select **Service account**.\n5. Name this key **Oktane lab**. Keep all other options as default.\n6. Select **Done**.\n\n> Your OpenAI API key is displayed in a pop up message. Keep this open for the next step.",
+      "title": "Create Google Gemini API key",
+      "description": "## Create an Google Gemini API key\n\n>If you haven't already, create an [Google AI Studio account](https://ai.google.dev/aistudio).\n\n1. Sign into your Google AI Studio account at https://ai.google.dev/aistudio\n3. Select the **Get API key** button.\n4. Select the **+ Create API key** button.\n5. *If you have multiple existing projects in your account*, you will be asked to select a project and prompted to select an additional **Create API key in existing project** button.\n\n> Your Gemini API key is displayed in a pop up message. Keep this open for the next step.",
       "selection": {
         "start": {
           "line": 11,
@@ -92,8 +92,9 @@
     },
     {
       "file": ".env",
-      "description": "## Set OPEN_API_KEY\n\n1. From the OpenAI window, select the **Copy** button to copy your API key.\n2. Paste this value on the line highlighted above to set the **OPEN_AI_KEY** variable.\n3. Select the **Done** button in the OpenAI window to dismiss the window. You may now log out of OpenAI and close its tab.",
-      "line": 13
+      "description": "## Set GOOGLE_API_KEY\n1. From the Google Gemini window, select the **Copy** button to copy your API key.\n2. Paste this value on the line highlighted above to set the **GOGGLE_API_KEY** variable.\n3. You may now exit the Google AI Studio tab.",
+      "line": 13,
+      "title": "Set GOOGLE_API_KEY"
     }
   ],
   "nextTour": "2: Create an Auth0 FGA model"

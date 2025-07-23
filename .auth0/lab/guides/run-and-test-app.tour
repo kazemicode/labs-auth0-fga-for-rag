@@ -24,11 +24,11 @@
     },
     {
       "title": "Give the user access to the private doc",
-      "description": "## Give the user access to the private doc\n\nFor the agent to access informationin the private doc on the user's behalf, we'll need to add a new tuple in Auth0 FGA.\n\n1. From the Auth0 FGA dashboard, select **Tuple Management**.\n2. Select the **+ Add Tuple** button.\n3. Fill in the following values:\n    - User:  **user:Sara***\n    - Object: select **doc** and add **private-doc** in the ID field\n    - Relation: **viewer**\n4. Select the **Add Tuple** button.\n\nIt should look like this:\n\n![img](https://cdn.auth0.com/website/auth0-training/oktane25/fga-tuple-restricted.png)"
+      "description": "## Give the user access to the private doc\n\nFor the agent to access informationin the private doc on the user's behalf, we'll need to add a new tuple in Auth0 FGA.\n\n1. From the Auth0 FGA dashboard, select **Tuple Management**.\n2. Select the **+ Add Tuple** button.\n3. Fill in the following values:\n    - User:  **user:Sara**\n    - Object: select **doc** and add **private-doc** in the ID field\n    - Relation: **viewer**\n4. Select the **Add Tuple** button.\n\nIt should look like this:\n\n![img](https://cdn.auth0.com/website/auth0-training/oktane25/fga-tuple-restricted.png)"
     },
     {
       "title": "Re-run the application",
-      "description": "## Re-run the application\n\n1. Select [this link](command:workbench.action.debug.stop) to stop the application.\n1. Select [this link](command:workbench.action.debug.start) to re-run the application.\n> This time, the agent should respond with the forecast information since the user has permission to view the private-doc.\n"
+      "description": "## Re-run the application\n\n1. Select [this link](command:workbench.action.debug.start) to re-run the application.\n> This time, the agent should respond with the forecast information since the user has permission to view the private-doc.\n"
     },
     {
       "title": "Finished!",
