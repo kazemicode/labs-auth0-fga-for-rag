@@ -15,7 +15,7 @@ This lab uses sample code from Auth0 documentation on how to set up [Authorizati
     **⚠️ Note to internal Okta employees: Do NOT use your EMU (Enterprise-managed user) account since Codespaces are disabled.**
 
 2. An Auth0 FGA account: You'll need an Auth0 FGA account. We'll walk you through how to set this up in the lab.
-3. An OpenAI account: Last, you'll need an OpenAI account to create an OpenAI API key for this lab. We'll walk you through how to set this up in the lab.
+3. A Google Gemini: Last, you'll need an Google Gemini account to create an Google Gemini API key for this lab. We'll walk you through how to set this up in the lab.
 
 ## Accessing and Working with Auth0 Labs
 
