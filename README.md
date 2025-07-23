@@ -18,7 +18,7 @@ FGA+RAG? OMG! Leverage Auth0 FGA and Auth for GenAI to implement [fine-grained a
 ## Accessing and Working with Auth0 Labs
 
 1. **After logging into GitHub, open the lab repo in a Codespace:** From the *Code* dropdown menu of this branch, toggle to the *Codespaces* tab. Click the plus sign to create and open the lab in a Codespace. A new tab will open, and Codespaces will begin configuring the lab environment. Wait for the environment to finish building.
-2. **Begin working with the lab:** Once the environment is ready you'll see a Codetour popup with instructions for connecting the lab to your Auth0 account. This can take some time, as the environment is installing several extensions and libraries to facilitate the lab. Once it is complete, you can open the Codetour to view all steps using the panel in the lower right. At this point, you should follow the remainder of the instructions within Codetour!
+2. **Begin working with the lab:** Once the environment loads all the required libraries and extensions, you'll see a Codetour popup with instructions on how to get started. At this point, you should follow the remainder of the instructions within Codetour!
 
 ### Notes:
 - **If you'd like to save your work to your own fork:** You can commit and push your changes to a fork of this repo. (See: [Using Source Control in Your Codespace](https://docs.github.com/en/codespaces/developing-in-codespaces/using-source-control-in-your-codespace)).
