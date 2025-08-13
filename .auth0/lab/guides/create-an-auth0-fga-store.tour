@@ -10,7 +10,7 @@
       "file": "",
       "line": 1,
       "title": "Create an Auth0 FGA client",
-      "description": "## Create an Auth0 FGA client\n\n> Your **Oktane Lab** store should now be selected in the dashboard.\n\n1. In the [Auth0 FGA dashboard](https://dashboard.fga.dev/), go to **Settings**.\n2. Scroll down to the Authorized Clients section, and select the **+ Create Client** button.\n3. Name the client **Oktane demo**.\n4. Select all of the Client Permissions boxes:\n    - **Read/Write model, changes, and assertions**\n    - **Write and delete tuples**\n    - **Read and query**.\n3. Select the **Create** button.\n\n> You will see a window with your client credentials pop up. Keep this open for the following steps."
+      "description": "## Create an Auth0 FGA client\n\n> Your **Oktane Lab** store should now be selected in the dashboard.\n\n1. In the [Auth0 FGA dashboard](https://dashboard.fga.dev/), go to **Settings**.\n2. Scroll down to the Authorized Clients section, and select the **+ Create Client** button.\n3. Name the client **Oktane demo**.\n4. Select the following Client Permissions boxes:\n    - **Read/Write model, changes, and assertions**\n    - **Write and delete tuples**\n    - **Read and query**.\n3. Select the **Create** button.\n\n> You will see a window with your client credentials pop up. Keep this open for the following steps."
     },
     {
       "title": "Create the .env file",
@@ -35,7 +35,7 @@
     {
       "file": ".env",
       "description": "## Set `FGA_CLIENT_ID`\n1. Copy the **Client ID** value from the window that popped up when you created the Auth0 FGA client.\n1. Paste this value on the line highlighted above to set the **FGA_CLIENT_ID** variable.\n",
-      "line": 8,
+      "line": 9,
       "selection": {
         "start": {
           "line": 1,
@@ -51,7 +51,7 @@
     {
       "file": ".env",
       "description": "## Set `FGA_CLIENT_SECRET`\n1. Copy the **Client Secret** value from the window that popped up when you created the Auth0 FGA client.\n1. Paste this value on the line highlighted above to set the **FGA_CLIENT_SECRET** variable.\n",
-      "line": 9,
+      "line": 10,
       "title": "Set FGA_CLIENT_SECRET"
     },
     {
@@ -72,22 +72,12 @@
     },
     {
       "title": "Create Google Gemini API key",
-      "description": "## Create an Google Gemini API key\n\n>If you haven't already, create an [Google AI Studio account](https://ai.google.dev/aistudio).\n\n1. Sign into your Google AI Studio account at https://ai.google.dev/aistudio\n3. Select the **Get API key** button.\n4. Select the **+ Create API key** button.\n5. *If you have multiple existing projects in your account*, you will be asked to select a project and prompted to select an additional **Create API key in existing project** button.\n\n> Your Gemini API key is displayed in a pop up message. Keep this open for the next step.",
-      "selection": {
-        "start": {
-          "line": 11,
-          "character": 4
-        },
-        "end": {
-          "line": 11,
-          "character": 52
-        }
-      }
+      "description": "## Create an Google Gemini API key\n\n>If you haven't already, create an [Google AI Studio account](https://ai.google.dev/aistudio).\n\n1. Sign into your Google AI Studio account at https://ai.google.dev/aistudio\n3. Select the **Get API key** button.\n4. Select the **+ Create API key** button.\n5. *If you have multiple existing projects in your account*, you will be asked to select a project and prompted to select an additional **Create API key in existing project** button.\n\n> Your Gemini API key is displayed in a pop up message. Keep this open for the next step."
     },
     {
       "file": ".env",
       "description": "## Set GOOGLE_API_KEY\n1. From the Google Gemini window, select the **Copy** button to copy your API key.\n2. Paste this value on the line highlighted above to set the **GOGGLE_API_KEY** variable.\n3. You may now exit the Google AI Studio tab.",
-      "line": 12,
+      "line": 13,
       "title": "Set GOOGLE_API_KEY"
     }
   ],

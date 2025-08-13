@@ -55,7 +55,7 @@
     {
       "file": "index.ts",
       "description": "## Print the answer\n\nFinally, we'll print the answer to the query.\n\nSelect the **Insert Code** link below to insert the code just under the comment to print the answer:\n```js\n  console.info(\"Answer: \" + answer);\n  \n```",
-      "line": 44
+      "line": 45
     }
   ],
   "nextTour": "4: Run and test the application"
