@@ -1,7 +1,7 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
   "title": "4: Run and test the application",
-  "nextTour": "5: Bonus: Earn an Early Adopter Auth for AI Agents Skill Badge",
+  "nextTour": "5: Bonus: Earn an Early Adopter Auth0 for AI Agents Skill Badge",
   "steps": [
     {
       "title": "Checkpoint",
@@ -33,7 +33,7 @@
     },
     {
       "title": "Finished!",
-      "description": "## Finished!\n🎉 Congratulations, you have completed the lab! \n\nIn this lab, you:\n\n1. Created an Auth0 FGA store and client.\n2. Set the Auth0 FGA and Google Gemini specific environment variables in your .env file so that you can call the Auth0 FGA and Google Gemini APIs from an included sample application.\n3. Created an Auth0 FGA model.\n4. Created a relationship tuple that specifies that all users can view the public-doc.\n5. Created a RAG pipeline using LangChain and the Node.js Auth0 AI Langchain SDK.\n6. Ran the application to test FGA on our RAG pipeline.\n7. Updated the relationship tuples to give a user access to the private-doc, so the agent could answer a question requiring restricted information.\n\n## ⭐ Bonus: Earn an Auth for AI Agents Skill Badge\n\nFurther your learning with our [Secure AI Workflows with Auth for AI Agents](https://learning.okta.com/path/secure-ai-workflows-with-auth-for-ai-agents) learning path. Pass the assessment and earn a skill badge that you can show off on social media!",
+      "description": "## Finished!\n🎉 Congratulations, you have completed the lab! \n\nIn this lab, you:\n\n1. Created an Auth0 FGA store and client.\n2. Set the Auth0 FGA and Google Gemini specific environment variables in your .env file so that you can call the Auth0 FGA and Google Gemini APIs from an included sample application.\n3. Created an Auth0 FGA model.\n4. Created a relationship tuple that specifies that all users can view the public-doc.\n5. Created a RAG pipeline using LangChain and the Node.js Auth0 AI Langchain SDK.\n6. Ran the application to test FGA on our RAG pipeline.\n7. Updated the relationship tuples to give a user access to the private-doc, so the agent could answer a question requiring restricted information.\n\n## ⭐ Bonus: Earn an Auth0 for AI Agents Skill Badge\n\nFurther your learning with our [Secure AI Workflows with Auth0 for AI Agents](https://learning.okta.com/path/secure-ai-workflows-with-auth-for-ai-agents) learning path. Pass the assessment and earn a skill badge that you can show off on social media!",
       "selection": {
         "start": {
           "line": 2,
